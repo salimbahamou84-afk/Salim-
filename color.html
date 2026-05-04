@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>ska</title>
+  <style>
+   body {
+     background-image:url('f7e.jpg') ;
+     color: white;
+   }
+   h1{
+     color: white;
+     text-align:center;
+     position:fixed;
+     top: 250px;
+     left:100px;
+     
+   }
+   input {
+     position: fixed;
+     top:150px;
+     left: 155px;
+     width: 50px;
+   }
+   
+  </style>
+  <body>
+    <h2>اضغط على مربع الوان للحصول على قيمة اللون</h2>
+    <input type="color">
+    <h1></h1>
+  <script>
+    h1qs=document.querySelector("h1")
+    input=document.querySelector("input")
+  input.addEventListener('input',()=>{
+    h1qs.innerHTML=` اللون هو:${input.value}`})
+  
+  </script>
+    
+    
+  </body>
